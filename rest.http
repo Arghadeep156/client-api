@@ -1,0 +1,101 @@
+### User SignUp Endpoint
+
+POST http://localhost:3001/v1/user
+Content-Type: application/json
+
+{
+    "name": "Aveek Das",
+    "company": "Amazon",
+    "address": "City Ceneter",
+    "phone": "1234567890",
+    "email": "xyz10@xyz.com",
+    "password": "Arghadeep@123"
+}
+
+
+### user Signin endpoint
+
+POST http://localhost:3001/v1/user/login
+Content-Type: application/json
+
+{
+    "email": "xyz10@xyz.com",
+    "password": "Arghadeep@123"
+}
+
+### Get user profile endpoint
+
+GET http://localhost:3001/v1/user
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzYwNTExNjMsImV4cCI6MTczNjA1MjA2M30.-atRZ12vH-CvGCXon1yN2elVsIfe9uBfgau14fJr8ig
+
+### Token Router
+
+### Get refreshed tokens
+GET http://localhost:3001/v1/tokens/fresh-access-jwt
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzM1NzY0ODQsImV4cCI6MTczNjE2ODQ4NH0.FqTE6kpRnJBqhOzoV1Z6_d1z1fbQ7p_nfzH78bA4NdQ
+
+###Password reset request endpoints
+
+POST http://localhost:3001/v1/user/reset-password
+Content-Type: application/json 
+
+ {
+    "email" : "xyz10@xyz.com"
+ }
+
+###Update new password endpoint
+
+PATCH http://localhost:3001/v1/user/reset-password
+Content-Type: application/json
+
+{
+    "email": "xyz10@xyz.com",
+    "pin": "550205",
+    "password": "Arghadeep@123"
+}
+
+###Logout Request
+DELETE http://localhost:3001/v1/user/logout
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzY0MDExNDcsImV4cCI6MTczNjQwMjA0N30.KFlckWQS4p5TWTWi4k4-yqfetYsOhowDpHegEkrqQFE
+
+###Create new Ticket 
+POST http://localhost:3001/v1/ticket 
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ3MDIwMTIsImV4cCI6MTczNDcwMjkxMn0.snoD5-GJoaaiyIx8bmcu48yJ_BgoyHUbXX7AH_Nmi_Y
+
+{
+    "subject": "Many Many Issues 12",
+    "sender": "Chandler",
+    "message": "Kya hal hai!!!!!"
+}
+
+### Get all tickets of a particular user
+GET http://localhost:3001/v1/ticket 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ5Njg4OTgsImV4cCI6MTczNDk2OTc5OH0.eiz_Vv5Op7MNV3Ci5DDRlmV7psku5-c02tn4TVATo9M
+
+
+### Get particular ticket as requested by the user 
+
+GET http://localhost:3001/v1/ticket/67616e34f268ee9f6c030ef6
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ0Mzg0MDQsImV4cCI6MTczNDQzOTMwNH0.ZBpjss9K5XPJ_g5LWxNl1wYAFfTrc8QFdwdN4UBhtRw
+
+
+### Update ticket Conversation
+PUT http://localhost:3001/v1/ticket/67657451672da0ba5c07ba0d
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ3MDIwMTIsImV4cCI6MTczNDcwMjkxMn0.snoD5-GJoaaiyIx8bmcu48yJ_BgoyHUbXX7AH_Nmi_Y
+
+{
+    "sender": "Joey",
+    "message": "Good, How you doin?"
+}
+
+###Close Ticket 
+
+PATCH http://localhost:3001/v1/ticket/close-ticket/67602810740459b24a8ca7a2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ5NTc5ODcsImV4cCI6MTczNDk1ODg4N30.08rkVV9CgiSqjKuZUjHsFE5PrS3IvQaFtfSt0qc3UhM
+
+### Delete Ticket 
+
+DELETE http://localhost:3001/v1/ticket/67602810740459b24a8ca7a2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ1MDAxMzIsImV4cCI6MTczNDUwMTAzMn0.vfJSE1rhNFlpQkOlY4ydabzzYznzbEU3uTtoGBWsazQ
