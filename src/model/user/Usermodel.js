@@ -26,6 +26,7 @@ const getUserByEmail = async (email) => {
 
 const storeUserRefreshJWT = async (id, token) => {
   try {
+    console.log("Is Passed to the storeuserRefreshJWT", id);
     if (!mongoose.Types.ObjectId.isValid(id)) {
       console.log("Invalid UserId provided");
       return null;

@@ -56,7 +56,7 @@ Content-Type: application/json
 
 ###Logout Request
 DELETE http://localhost:3001/v1/user/logout
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzY0MDExNDcsImV4cCI6MTczNjQwMjA0N30.KFlckWQS4p5TWTWi4k4-yqfetYsOhowDpHegEkrqQFE
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3Mzc2MDUzMzEsImV4cCI6MTczNzYwNjIzMX0.aKZrVddn2FtjYwdXwcppLzKzQt7uDxpk0wjz_FV4WtM
 
 ###Create new Ticket 
 POST http://localhost:3001/v1/ticket 

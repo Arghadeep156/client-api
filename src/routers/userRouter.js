@@ -171,11 +171,12 @@ router.patch("/reset-password", updatePasswordValidation, async (req, res) => {
 router.delete("/logout", userAuthorization, async (req, res) => {
   //Get jwt and verify
   const { authorization } = req.headers;
-  const id = req.userID;
+  const { userID } = req.body;
+  console.log("User Router for logout route", userID);
   //Delete accessJWT from redis database
   await deleteJWT(authorization);
   //Deleting the refreshJWT from the mongoDB.
-  const result = await storeUserRefreshJWT(id, "");
+  const result = await storeUserRefreshJWT(userID, "");
   if (result) {
     if (result._id) {
       return res.json({

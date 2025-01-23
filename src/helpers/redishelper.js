@@ -39,6 +39,7 @@ const getJWT = async (key) => {
 };
 
 const deleteJWT = async (key) => {
+  console.log("Delete JWT Activated");
   try {
     client.del(key);
   } catch (error) {
