@@ -26,13 +26,13 @@ Content-Type: application/json
 ### Get user profile endpoint
 
 GET http://localhost:3001/v1/user
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzYwNTExNjMsImV4cCI6MTczNjA1MjA2M30.-atRZ12vH-CvGCXon1yN2elVsIfe9uBfgau14fJr8ig
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzgyNDU4NDIsImV4cCI6MTc0MDgzNzg0Mn0.r5-l8gm9pRyvjaIOpqjTTpaYsb0GF3D6gWXfNacnhPM
 
 ### Token Router
 
 ### Get refreshed tokens
 GET http://localhost:3001/v1/tokens/fresh-access-jwt
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzM1NzY0ODQsImV4cCI6MTczNjE2ODQ4NH0.FqTE6kpRnJBqhOzoV1Z6_d1z1fbQ7p_nfzH78bA4NdQ
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzgyNDYzMDYsImV4cCI6MTc0MDgzODMwNn0.3BWUDVut8NRQJFBWxE3hTIA0xaI-emY4gR7IUTzu2lA
 
 ###Password reset request endpoints
 
@@ -56,7 +56,7 @@ Content-Type: application/json
 
 ###Logout Request
 DELETE http://localhost:3001/v1/user/logout
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3Mzc2MDUzMzEsImV4cCI6MTczNzYwNjIzMX0.aKZrVddn2FtjYwdXwcppLzKzQt7uDxpk0wjz_FV4WtM
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzgyNDQwMTAsImV4cCI6MTczODI0NDkxMH0.vPnxPBvdD11SuGxc7BbwTv9ptKpkI521ZvbBZ-UHiZs
 
 ###Create new Ticket 
 POST http://localhost:3001/v1/ticket 
@@ -98,4 +98,4 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5j
 ### Delete Ticket 
 
 DELETE http://localhost:3001/v1/ticket/67602810740459b24a8ca7a2
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ1MDAxMzIsImV4cCI6MTczNDUwMTAzMn0.vfJSE1rhNFlpQkOlY4ydabzzYznzbEU3uTtoGBWsazQ
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzgyNDM3MTMsImV4cCI6MTczODI0NDYxM30.7OG5NPkjAQH19lhHDiy0e8wDQ-DRmO8mbW1PRuNDArA

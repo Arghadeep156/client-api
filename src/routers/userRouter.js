@@ -179,6 +179,7 @@ router.delete("/logout", userAuthorization, async (req, res) => {
   const result = await storeUserRefreshJWT(userID, "");
   if (result) {
     if (result._id) {
+      console.log("result", result);
       return res.json({
         status: "success",
         message: "Logged out successfully",
