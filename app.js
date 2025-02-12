@@ -15,7 +15,7 @@ const mongoose = require("mongoose");
 app.use(
   cors({
     origin: "http://localhost:3000", // Allow only requests from localhost:3000
-    methods: "GET,POST,PATCH,DELETE", // Allow only GET and POST requests (or more as needed)
+    methods: "GET,POST,PATCH,DELETE,PUT", // Allow only GET and POST requests (or more as needed)
   })
 );
 

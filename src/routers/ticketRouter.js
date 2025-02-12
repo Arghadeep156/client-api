@@ -164,8 +164,7 @@ router.put(
 router.patch("/close-ticket/:id", userAuthorization, async (req, res) => {
   try {
     const { id } = req.params;
-    const { userID } = req.body;
-
+    //const { userID } = req.body;
     //Validate the request parameters
     if (!id) {
       return res.status(400).json({
@@ -173,10 +172,10 @@ router.patch("/close-ticket/:id", userAuthorization, async (req, res) => {
         message: "All required fields (ticketId) must be provided.",
       });
     }
-
     const result = await closeTicket(id);
 
     if (result) {
+      console.log("Close Ticket router - Success");
       res.status(200).json({
         status: "success",
         message: "Ticket closed successfully.",

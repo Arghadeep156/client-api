@@ -61,12 +61,12 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5j
 ###Create new Ticket 
 POST http://localhost:3001/v1/ticket 
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ3MDIwMTIsImV4cCI6MTczNDcwMjkxMn0.snoD5-GJoaaiyIx8bmcu48yJ_BgoyHUbXX7AH_Nmi_Y
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzkzMzUyMjIsImV4cCI6MTczOTMzNjEyMn0.fhhxmfz1Xp27_DYwuswEKCvS20K5152CNTK3J3fCncA
 
 {
-    "subject": "Many Many Issues 12",
-    "sender": "Chandler",
-    "message": "Kya hal hai!!!!!"
+    "subject": "Many Many Issues 15",
+    "sender": "Aveek",
+    "message": "Need to install a software for project purposes"
 }
 
 ### Get all tickets of a particular user
@@ -83,11 +83,11 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5j
 ### Update ticket Conversation
 PUT http://localhost:3001/v1/ticket/67657451672da0ba5c07ba0d
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ3MDIwMTIsImV4cCI6MTczNDcwMjkxMn0.snoD5-GJoaaiyIx8bmcu48yJ_BgoyHUbXX7AH_Nmi_Y
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3Mzg2OTk3MTAsImV4cCI6MTczODcwMDYxMH0._GvW9jEa4176y2g_NzUT8zeVmbgm-9z1TWdv05LvXJU
 
 {
-    "sender": "Joey",
-    "message": "Good, How you doin?"
+    "sender": "Chandler",
+    "message": "Can this coffee, be more cold?"
 }
 
 ###Close Ticket 

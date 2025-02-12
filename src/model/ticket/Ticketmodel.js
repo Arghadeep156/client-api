@@ -66,7 +66,7 @@ const updateClientReply = async (updateObj) => {
 
 const closeTicket = async (ticketId) => {
   try {
-    if (!mongoose.Types.ObjectId.isValid(ticket)) {
+    if (!mongoose.Types.ObjectId.isValid(ticketId)) {
       throw new Error("Invalid ObjectId format");
     }
     const result = await TicketSchema.findByIdAndUpdate(
