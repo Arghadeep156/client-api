@@ -13,10 +13,8 @@ const userAuthorization = async (req, res, next) => {
     if (!result) {
       res.status(403).json({ message: "JWT token not present in redis" });
     }
-    console.log("Before");
     console.log("AuthorizationMiddleware", result);
     req.body.userID = result;
-    console.log("After");
     next();
   } else {
     deleteJWT(authorization);

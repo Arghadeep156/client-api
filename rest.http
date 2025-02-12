@@ -92,8 +92,8 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5j
 
 ###Close Ticket 
 
-PATCH http://localhost:3001/v1/ticket/close-ticket/67602810740459b24a8ca7a2
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzQ5NTc5ODcsImV4cCI6MTczNDk1ODg4N30.08rkVV9CgiSqjKuZUjHsFE5PrS3IvQaFtfSt0qc3UhM
+PATCH http://localhost:3001/v1/ticket/close-ticket/67ac26736aca25518709f8dd
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ejEwQHh5ei5jb20iLCJpYXQiOjE3MzkzMzYxOTYsImV4cCI6MTczOTMzNzA5Nn0.-3HeTXibQ8sbiQ4aMfFCdxmFK0jpa0LWucwIWUpCcHc
 
 ### Delete Ticket 
 
