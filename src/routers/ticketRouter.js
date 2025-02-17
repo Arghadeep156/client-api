@@ -38,7 +38,7 @@ router.post(
     try {
       const { subject, sender, message, userID } = req.body;
       const ticketObj = {
-        clientID: new mongoose.Types.ObjectId(userID),
+        clientID: userID,
         subject,
         conversation: [
           {
